@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./theme.css";
 /* ---------------------- ATOMS ---------------------- */
 
 const Input = ({ label, ...props }: any) => (

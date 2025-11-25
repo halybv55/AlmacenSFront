@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "./theme.css";
 // ENDPOINTS REALES
 const API_BASE = "https://almacensanc-production.up.railway.app/api/Producto";
 const API_CATALOGO = `${API_BASE}/catalogo-simple`;

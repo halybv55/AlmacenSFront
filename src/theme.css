@@ -1,0 +1,170 @@
+/* =======================
+   🌾 TEMA GENERAL LECHE 🐄
+   ======================= */
+
+:root {
+  --milk-white: #faf8f3;
+  --milk-foam: #fffdfa;
+  --milk-brown: #c8a97e;
+  --milk-brown-dark: #8d6b48;
+  --milk-dark: #4b3d2b;
+  --milk-black: #1f1b17;
+
+  --rounded: 14px;
+  --shadow: 0px 4px 16px rgba(0,0,0,0.12);
+}
+
+/* ============================
+   🌟 ESTILO GLOBAL DE LA APP
+   ============================ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--milk-foam);
+  font-family: "Segoe UI", sans-serif;
+  color: var(--milk-black);
+}
+
+/* =======================
+   📦 CONTENEDOR PRINCIPAL
+   ======================= */
+
+.page-container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: var(--milk-white);
+  padding: 25px 40px;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+  border-left: 6px solid var(--milk-brown);
+}
+
+/* =======================
+       📌 TITULOS
+   ======================= */
+
+h1, h2 {
+  margin: 5px 0 15px 0;
+  font-weight: 700;
+  color: var(--milk-dark);
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 22px;
+  color: var(--milk-brown-dark);
+}
+
+/* =======================
+      ✏ FORMULARIOS
+   ======================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: var(--rounded);
+  border: 2px solid var(--milk-brown);
+  background: var(--milk-foam);
+  outline: none;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--milk-dark);
+  box-shadow: 0px 0px 10px rgba(200,169,126,0.35);
+}
+
+/* =======================
+      🔘 BOTONES
+   ======================= */
+
+button {
+  padding: 12px 18px;
+  background: var(--milk-brown);
+  color: white;
+  border: none;
+  border-radius: var(--rounded);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: var(--milk-brown-dark);
+}
+
+/* =======================
+        📊 TABLAS
+   ======================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--milk-foam);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-top: 15px;
+}
+
+th {
+  background: var(--milk-brown);
+  padding: 14px;
+  color: white;
+  text-align: left;
+  font-size: 15px;
+}
+
+td {
+  padding: 14px;
+  font-size: 14px;
+  border-bottom: 1px solid #e7e0d6;
+}
+
+tr:hover td {
+  background: #fffdf7;
+}
+
+/* =======================
+    🔹 CARDS (Dashboard)
+   ======================= */
+
+.card {
+  background: var(--milk-white);
+  padding: 20px;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+}
+
+/* =======================
+    🔹 GRID GENERAL
+   ======================= */
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
